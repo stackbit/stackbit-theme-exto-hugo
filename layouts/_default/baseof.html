@@ -2,7 +2,7 @@
 <html lang="en">
     <head>    
         
-        <title>{{ if .Title }}{{ $.Title }} - {{ end }}{{ .Site.Title }}</title>
+        <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="{{ .Params.excerpt | default .Site.Params.description }}"/>

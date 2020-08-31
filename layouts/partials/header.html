@@ -4,7 +4,7 @@
       <div class="site-branding">
         {{ if .Site.Params.header.logo_img }}
         <p class="site-logo">
-          <a href="{{ "/" | relURL }}"><img src="{{ $.Site.Params.header.logo_img | relURL }}" alt="{{ $.Site.Params.header.title }}" /></a>
+          <a href="{{ "/" | relURL }}"><img src="{{ .Site.Params.header.logo_img | relURL }}" alt="{{ $.Site.Params.header.title }}" /></a>
         </p>
         {{ else }}
         <p class="site-title"><a href='{{ "/" | relURL }}'>{{ $.Site.Params.header.title }}</a></p>
